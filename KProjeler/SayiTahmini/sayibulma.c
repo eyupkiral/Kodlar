@@ -8,7 +8,7 @@ int main(){
     int tahmin;
     int azami = 100;
     int sabit = 0;
-    randomNum = rand() % azami + 1; // azami değeri 100 olduğundan 1 ila 100 arasından bir sayı seçicektir. azami değeri değiştirilebilir.
+    randomNum = rand() % azami + 1; // "azami" değeri 100 olduğundan 1 ila 100 arasından bir sayı seçicektir. "azami" değeri değiştirilebilir.
     printf("Bilgisayar rastgele bir sayi secti. Tahminleri alalim(1-%d):\n ", azami);
     scanf("%d" , &tahmin);
     while (sabit == 0){
