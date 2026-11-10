@@ -10,8 +10,12 @@ int main(){
     printf("D....COFFEE....30TL\n");
     printf("Please select your product(A-D): ");
     scanf(" %c", &secim);
-
     secim = toupper(secim);
+    while (secim != 'A' && secim != 'B' && secim != 'C' && secim != 'D'){
+        printf("Invalid selection! Please select a valid product (A-D): ");
+        scanf(" %c", &secim);
+        secim = toupper(secim);
+    }
     if (secim == 'A' || secim == 'B' || secim == 'C' || secim == 'D'){
         printf("Please enter your payment amount: ");
         scanf("%d", &odeme);
@@ -36,9 +40,4 @@ int main(){
             return 0;
         }
     }
-    else{
-        printf("Invalid selection! Please select a valid product (A-D).\n");
-        return 0;
-    }
-    printf("Selected product: %c\n", secim);
 }
