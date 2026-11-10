@@ -15,4 +15,5 @@ int main(){
         Balance -= withdrawel;
         printf("Withdrawel Successful! New Balance: %d TL\n", Balance);
     }
+    return 0;
 }

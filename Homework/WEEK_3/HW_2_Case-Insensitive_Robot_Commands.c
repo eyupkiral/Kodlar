@@ -11,7 +11,7 @@ int main(){
     while (1){
         printf("Robot is at position (%d, %d).\n", oyunalanix, oyunalaniy);
         printf("Robot Has A space of mobility in a 10x10 grid.\n");
-        printf("Enter a command (F, B, L, R): ");
+        printf("Enter a command (F, B, L, R, (E)nd): ");
         scanf(" %c", &command);
         command = toupper(command);
         if (command == 'F'){
@@ -55,9 +55,14 @@ int main(){
                 oyunalanix++;
             }
         }
+        else if (command == 'E'){
+            printf("Exiting the program.\n");
+            break;
+        }
         else{
         printf("Invalid command!\n");
         }
 
     }
+    return 0;
 }
